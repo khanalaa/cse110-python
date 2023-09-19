@@ -1,0 +1,27 @@
+print("Please enter the following information:")
+firstName = input("First name: ")
+lastName = input("Last name: ")
+emailAddress = input("Email address: ")
+number = input("Phone number: ")
+job = input("Job title: ")
+idNumber = input("ID Number: ")
+
+hair = input("Hair: ")
+eyes = input("Eyes color: ")
+month = input("Month: ")
+training = input("Training (Yes/NO): ")
+
+print()
+print("The ID Card is:")
+print("----------------------------------------")
+
+print(lastName.upper() +", "+ firstName.capitalize())
+print(job.title())
+print("ID: " + idNumber[:2] + "-" + idNumber[2:])
+print()
+print(emailAddress.lower()) 
+print("(" + number[:3] +") " + number[3:6] + "-" + number[6:] + "\n")     
+print("Hair: {0:<17s}Eyes: {1}".format(hair.capitalize(),eyes.capitalize()))
+print("Month: {0:<16s}Training: {1}".format(month.capitalize(),training.capitalize()))
+
+print("----------------------------------------")
