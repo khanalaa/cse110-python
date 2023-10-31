@@ -9,7 +9,7 @@ for letter in secret_word:
 print("\nYour hint is: " + ("_ "*count))
 
 display = []
-guess = input("What is your guess? ")
+guess = input("What is your guess? ").lower()
 guess_count = 0
 for char in guess:
     guess_count += 1
@@ -23,7 +23,7 @@ while not is_true :
     loop_count += 1
     if len(guess) != count:
         print("\nSorry, the guess must have the same number of letters as the secret word.")
-        guess = input("What is your guess? ")
+        guess = input("What is your guess? ").lower()
     else:
         if secret_word == guess:
             print("\nCongratulations! You guessed it!")
@@ -40,7 +40,7 @@ while not is_true :
                 position += 1
 
             print(f"\nYour hint is:{' '.join(display)}")
-            guess = input("What is your guess? ")
+            guess = input("What is your guess? ").lower()
     
     
 print(f"It took you {loop_count} guesses.")
