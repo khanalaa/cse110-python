@@ -1,4 +1,7 @@
-secret_word = "temple"
+import random
+word_list = ['burritos','sandwich', 'burger', 'pizza', 'nuggets', 'fries', 'yogurt', 'salads', 'subway', 'pasta', 'taco', 'hotdog']
+
+secret_word = random.choice(word_list)
 
 print("Welcome to the guessing game!!!")
 
@@ -6,7 +9,7 @@ count = 0
 for letter in secret_word:
     count += 1
 
-print("\nYour hint is: " + ("_ "*count))
+print("\nYour hint is: " + ("_ " *count))
 
 display = []
 guess = input("What is your guess? ").lower()
