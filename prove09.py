@@ -41,3 +41,6 @@ while choice != 5:
 
 print("Thank You. Goodbye.")
 
+    # sorted_item = sorted(item)
+    # sorted_prices = sorted(prices)
+
