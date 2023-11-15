@@ -29,8 +29,10 @@ while choice != 5:
 
     elif choice == 2:
         print("The contents of the shopping cart are:")
+        print("{:<5} {:<30} {:<12} {:<10}".format("Index", "Item", "Price", "Quantity"))
         for index, (item_name,price,quantity) in enumerate(zip(item, prices,quantities)):
-            print(f"{index + 1}. {quantity} {item_name} - ${price} each\n")
+            print("{:<5} {:<30} {:<12} {:<10}".format( index+1, item_name, f"${price:.2f}", quantity))
+        print()
 
     elif choice == 3:
         remove = int(input("Which item would you like to remove? ")) - 1
